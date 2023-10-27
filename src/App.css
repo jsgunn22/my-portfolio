@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+body {
+  background: radial-gradient(
+    215.33% 215.33% at 50% 6.82%,
+    #154353 0%,
+    #2e94b9 100%
+  );
+}
 .logo {
   height: 6em;
   padding: 1.5em;
