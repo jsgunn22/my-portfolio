@@ -534,16 +534,32 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-\[\] {
+  left: ;
+}
+
+.left-\[-12px\] {
+  left: -12px;
+}
+
 .ml-auto {
   margin-left: auto;
 }
 
-.ml-\[200px\] {
-  margin-left: 200px;
-}
-
 .flex {
   display: flex;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-\[72px\] {
@@ -554,16 +570,16 @@ video {
   height: 100%;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .cursor-pointer {
@@ -574,12 +590,37 @@ video {
   justify-content: flex-end;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[-12\] {
+  gap: -12;
+}
+
+.gap-\[-12px\] {
+  gap: -12px;
+}
+
+.gap-\[8px\] {
+  gap: 8px;
+}
+
+.gap-x-\[-12px\] {
+  -moz-column-gap: -12px;
+       column-gap: -12px;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-pri-1 {
@@ -592,18 +633,23 @@ video {
   background-color: rgb(46 148 185 / var(--tw-bg-opacity));
 }
 
-.bg-gradient {
-  background-image: radial-gradient(215.33% 215.33% at 50% 6.82%, #154353 0%, #2E94B9 100%);;
+.bg-neu-0 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 251 251 / var(--tw-bg-opacity));
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.bg-gradient {
+  background-image: radial-gradient(215.33% 215.33% at 50% 6.82%, #154353 0%, #2E94B9 100%);;
 }
 
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-3 {
@@ -616,12 +662,34 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt-\[26px\] {
   padding-top: 26px;
 }
 
-.pr-8 {
-  padding-right: 2rem;
+.pr-24 {
+  padding-right: 6rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-h4 {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .text-lg {
@@ -629,9 +697,9 @@ video {
   line-height: 20px;
 }
 
-.text-h4 {
-  font-size: 14px;
-  line-height: 16px;
+.text-h1 {
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .font-medium {
@@ -641,6 +709,11 @@ video {
 .text-neu-0 {
   --tw-text-opacity: 1;
   color: rgb(250 251 251 / var(--tw-text-opacity));
+}
+
+.text-pri-5 {
+  --tw-text-opacity: 1;
+  color: rgb(46 148 185 / var(--tw-text-opacity));
 }
 
 .hover\:bg-pri-9:hover {
