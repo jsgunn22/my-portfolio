@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./*.{html,jsx}", "./src/*.jsx"],
+  content: ["./src/**/*.jsx"],
   theme: {
     fontFamily: {
       sans: "Roboto",
@@ -28,14 +28,14 @@ export default {
         9: "#484a4b",
       },
       pri: {
-        1: "#ede0f4",
-        5: "#872eb8",
-        9: "#511c6e",
-      },
-      sec: {
         1: "#e0eff5",
         5: "#2e94b9",
         9: "#1c596f",
+      },
+      sec: {
+        1: "#ede0f4",
+        5: "#872eb8",
+        9: "#511c6e",
       },
       suc: {
         1: "#e0f5e9",
@@ -67,8 +67,12 @@ export default {
       40: "0.4",
     },
     extend: {
-      gridTemplateColumns: {
-        auto: "repeat(auto-fit, minmax(332px, 1fr))",
+      // gridTemplateColumns: {
+      //   auto: "repeat(auto-fit, minmax(332px, 1fr))",
+      // },
+      backgroundImage: {
+        gradient:
+          "radial-gradient(215.33% 215.33% at 50% 6.82%, #154353 0%, #2E94B9 100%);",
       },
     },
   },

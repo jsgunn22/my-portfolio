@@ -1,5 +1,11 @@
+import Navbar from "./components/navbar/navbar";
+
 function App() {
-  return <h1 className="text-h1 font-bold text-neu-0">Hello World</h1>;
+  return (
+    <div className="bg-gradient min-h-screen">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
