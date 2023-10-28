@@ -15,12 +15,12 @@ function ProficiencyBubbles() {
           key={index}
           src={logo.src}
           alt={logo.logo}
-          className={`h-10 rounded-full relative -ml-3 `}
+          className={`h-10 rounded-full relative -ml-3 shadow-md hover:shadow-lg hover:scale-125 cursor-pointer`}
           style={{ zIndex: 60 - index * 10 }}
         />
       ))}
       <div
-        className="rounded-full bg-neu-0 h-10 w-10 relative -ml-3"
+        className="rounded-full bg-neu-0 h-10 w-10 relative -ml-3 shadow-md hover:shadow-lg hover:scale-125 cursor-pointer"
         style={{ zIndex: 0 }}
       >
         <h1 className="text-h1 text-pri-5 h-full w-full text-center">+</h1>
