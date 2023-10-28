@@ -21,18 +21,18 @@ const proficiencies = [
   },
   {
     key: 5,
-    logo: "React",
-    src: "../../../assets/images/proficiencies-logos/react.png",
-  },
-  {
-    key: 6,
     logo: "Express",
     src: "../../../assets/images/proficiencies-logos/express.png",
   },
   {
-    key: 7,
+    key: 6,
     logo: "Figma",
     src: "../../../assets/images/proficiencies-logos/figma.png",
+  },
+  {
+    key: 7,
+    logo: "invision",
+    src: "../../../assets/images/proficiencies-logos/invision.png",
   },
   {
     key: 8,

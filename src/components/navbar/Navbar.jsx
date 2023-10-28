@@ -9,16 +9,20 @@ function ProficiencyBubbles() {
 
   console.log(profLogos);
   return (
-    <div className="h-full w-full flex py-4 px-6 gap-x-[-12px]">
+    <div className="h-full w-full flex py-4 px-6 ">
       {profLogos.map((logo, index) => (
         <img
           key={index}
           src={logo.src}
           alt={logo.logo}
-          className="h-10 rounded-full gap-[8px]"
+          className={`h-10 rounded-full relative -ml-3 `}
+          style={{ zIndex: 60 - index * 10 }}
         />
       ))}
-      <div className="rounded-full bg-neu-0 h-10 w-10">
+      <div
+        className="rounded-full bg-neu-0 h-10 w-10 relative -ml-3"
+        style={{ zIndex: 0 }}
+      >
         <h1 className="text-h1 text-pri-5 h-full w-full text-center">+</h1>
       </div>
     </div>
