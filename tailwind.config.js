@@ -29,6 +29,7 @@ export default {
       },
       pri: {
         1: "#e0eff5",
+        3: "#8FDFFF",
         5: "#2e94b9",
         9: "#1c596f",
       },
@@ -55,8 +56,8 @@ export default {
       opac: {
         neu: "#484a4b26",
         alt: "#fafbfb26",
-        pri: "#872eb826",
-        sec: "#2e94b926",
+        pri: "#2e94b926",
+        sec: "#872eb826",
         suc: "#2eb96e26",
         dan: "#fd595926",
         war: "#f0b77526",
@@ -67,9 +68,6 @@ export default {
       40: "0.4",
     },
     extend: {
-      // gridTemplateColumns: {
-      //   auto: "repeat(auto-fit, minmax(332px, 1fr))",
-      // },
       backgroundImage: {
         gradient:
           "radial-gradient(215.33% 215.33% at 50% 6.82%, #154353 0%, #2E94B9 100%);",

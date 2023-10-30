@@ -8,12 +8,12 @@ export default function AboutMe() {
         style={{ height: "calc(100vh - 72px - 112px)" }}
       >
         {/* text area */}
-        <div>
+        <div className="w-full">
           <div className="max-w-lg mb-6">
             <h1 className="mb-1 text-[64px] font-black text-neu-0 leading-[75px] ">
               Jeffrey Gunn
             </h1>
-            <div className="flex text-[#8FDFFF] gap-1 mb-6">
+            <div className="flex text-pri-3 gap-1 mb-6">
               <h3 className="text-h3 font-bold">UI Design</h3>
               <h3 className="text-h3 font-bold">-</h3>
               <h3 className="text-h3 font-bold">Web Development</h3>
@@ -36,6 +36,7 @@ export default function AboutMe() {
             />
           </div>
         </div>
+        <div className="min-w-[656px] min-h-[656px] rounded-full bg-opac-pri relative -bottom-[68px] -right-[174px]"></div>
       </div>
     </>
   );

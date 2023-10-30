@@ -1,5 +1,5 @@
 import Button from "../atoms/button";
-import proficiencies from "../../../proficiencyLogos";
+import proficiencies from "../../../proficiencyData";
 import React, { useState } from "react";
 
 function ProfBubble(props) {
@@ -70,24 +70,25 @@ function ProficiencyBubbles() {
       {/* The following is for the overflow icon */}
       <div className="shadow-md hover:shadow-lg">
         <div
-          className="rounded-full bg-neu-0 h-10 w-10 relative -ml-6 shadow-md transition duration-200 hover:scale-125 cursor-pointer"
+          className="rounded-full bg-neu-0 h-10 relative -ml-6 shadow-md transition duration-200 hover:scale-110 flex cursor-pointer text-pri-5 hover:text-pri-9"
           style={{ zIndex: overflowIsHovered ? 1000 : 0 }}
           onMouseEnter={handleOverflowMouseEnter}
           onMouseLeave={handleOverflowMouseLeave}
         >
-          <h1 className="text-h1 text-pri-5 h-full w-full text-center ">+</h1>
+          <h1 className="text-h1  h-full w-10 text-center ">+</h1>
+          <h4 className="text-h4 mt-3 mr-3 font-bold">View My Resume</h4>
         </div>
         {/* hidden card */}
-        <div
+        {/* <div
           style={{ zIndex: 999 }}
-          className={`absolute  -ml-9 bg-neu-0 p-1.5  text-med rounded-md pt-7 w-fit w-[128px] top-10 ${
+          className={`absolute  -ml-9 bg-neu-0 p-1.5  text-med rounded-md pt-7 w-[128px] top-10 ${
             overflowIsHovered ? "block" : "hidden"
           }`}
         >
           {proficiencies.map((item, index) =>
             index >= 6 ? <p>{proficiencies[index].name}</p> : ""
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -113,7 +114,7 @@ function Navbar() {
         <NavBtn label="CONTACT" />
       </div>
       <div className="w-full h-full py-4 px-8 flex justify-end">
-        <Button label="Resume" style="ml-auto bg-pri-1" />
+        {/* <Button label="Resume" style="ml-auto bg-pri-1" /> */}
       </div>
     </nav>
   );
