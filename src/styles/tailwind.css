@@ -736,8 +736,16 @@ video {
   overflow: hidden;
 }
 
+.overflow-clip {
+  overflow: clip;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
 }
 
 .scroll-auto {
@@ -867,6 +875,10 @@ video {
 
 .pt-\[26px\] {
   padding-top: 26px;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {

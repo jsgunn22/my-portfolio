@@ -68,7 +68,6 @@ function SkillSetSection(props) {
 }
 
 export default function Resume() {
-  const designProf = proficiencies.filter((item) => item.skill === "uiDesign");
   return (
     <>
       <div

@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Footer from "./components/global/Footer";
 import Navbar from "./components/global/Navbar";
 // import AboutMe from "./pages/about";
@@ -8,7 +9,8 @@ function App() {
     <div className="bg-gradient min-h-screen">
       <Navbar />
       {/* <AboutMe /> */}
-      <Resume />
+      {/* <Resume /> */}
+      <Outlet />
       <Footer />
     </div>
   );
