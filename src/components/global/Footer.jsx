@@ -1,6 +1,6 @@
 function SocialBubble(props) {
   return (
-    <div className="h-12 w-12 rounded-full bg-opac-pri shadow-md hover:shadow-lg hover:scale-110 cursor-pointer">
+    <div className="h-12 w-12 rounded-full bg-opac-pri shadow-md transition duration-200 hover:shadow-lg hover:scale-110 cursor-pointer">
       <i
         className={`${props.icon} text-neu-0 text-h3 mt-3 w-full text-center`}
       ></i>
