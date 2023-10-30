@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 function SocialBubble(props) {
   const [isHovered, setIsHovered] = useState(false);
@@ -27,8 +28,17 @@ function SocialBubble(props) {
 }
 
 export default function Footer() {
+  const currentPage = useLocation().pathname;
   return (
-    <footer className="p-8 flex gap-4 absolute w-full bottom-0">
+    <footer
+      className="p-4 flex gap-4  absolute w-full bottom-0"
+      style={{
+        background:
+          currentPage !== "/"
+            ? "linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%)"
+            : "",
+      }}
+    >
       <p className="text-lg mt-[14px] text-neu-0">Follow Me</p>
       <div className="flex gap-12">
         <SocialBubble icon="fa-brands fa-github" />

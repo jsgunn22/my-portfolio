@@ -29,9 +29,9 @@ function ProfBubble(props) {
       {/* hidden card */}
       <div
         style={{ zIndex: 999 }}
-        className={`absolute  -ml-6 bg-neu-0 p-1.5  rounded-md pt-7 max-w-[200px] top-10 ${
-          ishovered ? "block" : "hidden"
-        }`}
+        className={`${
+          ishovered ? "block h-30" : "hidden h-0"
+        } absolute  -ml-6 bg-neu-0 p-1.5 transition duration-200  rounded-md pt-7 max-w-[200px] top-10 `}
       >
         <h4 className="text-h4 font-bold text-neu-9 mb-1">{props.name}</h4>
         <p className="text-sm">{props.summary}</p>
@@ -121,6 +121,7 @@ function NavBtn(props) {
 }
 
 function Navbar() {
+  const currentPage = useLocation().pathname;
   return (
     <nav className="h-[72px] flex">
       <ProficiencyBubbles />
