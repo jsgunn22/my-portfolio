@@ -72,7 +72,7 @@ export default function Resume() {
   return (
     <>
       <div
-        className="overflow-y-auto text-center"
+        className="overflow-y-auto scroll-auto text-center"
         style={{ height: "calc(100vh - 72px)" }}
       >
         <SkillSetSection

@@ -72,6 +72,9 @@ export default {
         gradient:
           "radial-gradient(215.33% 215.33% at 50% 6.82%, #154353 0%, #2E94B9 100%);",
       },
+      overflow: {
+        footer: "2px 2px 4px -2px rgba(1, 1, 1, 1)",
+      },
     },
   },
   plugins: [],
