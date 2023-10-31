@@ -1,28 +1,5 @@
 import proficiencies from "../../proficiencyData";
-
-function Bubble(props) {
-  return (
-    <div className="bg-opac-pri w-10 h-10 rounded-full shadow-md flex items-center justify-center">
-      <i className={`${props.icon} text-h3  text-pri-3`}></i>
-    </div>
-  );
-}
-
-function SectionHeader(props) {
-  return (
-    <div className="mb-4">
-      <div className="flex mb-2 ">
-        <Bubble icon={props.icon} />
-        <h1 className="ml-4 text-h1 font-black text-neu-0 max-w-2xl ">
-          {props.heading}
-        </h1>
-      </div>
-      <p className="text-lg text-neu-0 max-w-2xl text-left">
-        {props.description}
-      </p>
-    </div>
-  );
-}
+import SectionHeader from "../components/global/SectionHeader";
 
 function ProfCard(props) {
   return (

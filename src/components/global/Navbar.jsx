@@ -79,9 +79,7 @@ function ProficiencyBubbles() {
           onMouseLeave={handleOverflowMouseLeave}
         >
           <h1 className="text-h1  h-full w-10 text-center ">+</h1>{" "}
-          {currentPage === "/Resume" ? (
-            ""
-          ) : (
+          {currentPage !== "/Resume" && (
             <Link
               to="/Resume"
               onClick={handleOverflowMouseLeave}
@@ -121,13 +119,12 @@ function NavBtn(props) {
 }
 
 function Navbar() {
-  const currentPage = useLocation().pathname;
   return (
     <nav className="h-[72px] flex">
       <ProficiencyBubbles />
       <div className="flex">
         <NavBtn label="ABOUT ME" to="/" />
-        <NavBtn label="PORTFOLIO" to="/" />
+        <NavBtn label="PORTFOLIO" to="/Portfolio" />
         <NavBtn label="CONTACT" to="/" />
       </div>
       <div className="w-full h-full py-4 px-8 flex justify-end">
