@@ -5,7 +5,7 @@ export default function AboutMe() {
     <>
       <div
         className="px-20 flex items-center overflow-x-clip "
-        style={{ height: "calc(100vh - 72px - 112px)" }}
+        style={{ height: "calc(100vh - 72px - 112px)"}}
       >
         {/* text area */}
         <div className="w-full">

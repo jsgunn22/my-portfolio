@@ -9,8 +9,9 @@ export default function ContactMe() {
           Interested in learning more? Send me an email and let’s connect!
         </p>
       </div>
-      <div className="w-7/12  bg-neu-0  mx-auto shadow-lg rounded-lg mt-6 p-10">
-        <Input label="Your Name" />
+      <div className="w-7/12  bg-neu-0  mx-auto shadow-lg rounded-lg mt-6 p-10 flex flex-col gap-6">
+        <Input label="Your Name" type="text" />
+        <Input label="Your Email" type="email" />
       </div>
     </>
   );
