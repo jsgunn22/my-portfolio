@@ -18,11 +18,13 @@ function SocialBubble(props) {
       onMouseLeave={handleMouseLeave}
       className="h-12 w-12 rounded-full bg-opac-pri shadow-md transition duration-200 hover:shadow-lg  hover:scale-110 cursor-pointer"
     >
-      <i
-        className={`${props.icon} ${
-          isHovered && "text-war-5"
-        } text-neu-0 text-h3  mt-3 w-full text-center `}
-      ></i>
+      <a href={props.social} target="_blank">
+        <i
+          className={`${props.icon} ${
+            isHovered && "text-war-5"
+          } text-neu-0 text-h3  mt-3 w-full text-center `}
+        ></i>
+      </a>
     </div>
   );
 }
@@ -41,9 +43,18 @@ export default function Footer() {
     >
       <p className="text-lg mt-[14px] text-neu-0">Follow Me</p>
       <div className="flex gap-12">
-        <SocialBubble icon="fa-brands fa-github" />
-        <SocialBubble icon="fa-brands fa-linkedin" />
-        <SocialBubble icon="fa-brands fa-instagram" />
+        <SocialBubble
+          icon="fa-brands fa-github"
+          social="https://github.com/jsgunn22"
+        />
+        <SocialBubble
+          icon="fa-brands fa-linkedin"
+          social="https://www.linkedin.com/in/jeffrey-gunn-054451156/"
+        />
+        <SocialBubble
+          icon="fa-brands fa-instagram"
+          social="https://www.instagram.com/fate_worse_than_jeff/"
+        />
       </div>
     </footer>
   );

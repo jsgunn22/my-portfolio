@@ -40,7 +40,7 @@ const projects = [
     link: "https://jsgunn22.github.io/day-planner/",
     description:
       "The Day Planner is an app that allows the user to store and retrieve notes that are saved to a specific time frame throughtout the day.  I went above and beyond on this project and added an current time badge that and the ability to set the start and stop time of the users day. ",
-    proficiencies: [],
+    proficiencies: [proficiencies[1]],
   },
   {
     name: "Weather App",

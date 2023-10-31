@@ -36,7 +36,19 @@ export default function AboutMe() {
             />
           </div>
         </div>
-        <div className="min-w-[656px] min-h-[656px] rounded-full bg-opac-pri relative -bottom-[68px] -right-[174px]"></div>
+
+        <div className="relative min-w-[200px] h-[200px] shadow-sm -right-40 -top-24 rounded-full bg-opac-pri">
+          <div className="absolute min-w-[100px] min-h-[100px] shadow-sm right-80 top-40 rounded-full bg-opac-pri">
+            <div className="absolute min-w-[56px] min-h-[56px] shadow-sm -right-28 top-32 rounded-full bg-opac-pri"></div>
+          </div>
+        </div>
+
+        <div className="min-w-[656px] min-h-[656px] inset shadow-sm  rounded-full bg-opac-pri relative -bottom-[68px] -right-[174px]">
+          <img
+            src="assets/images/profile.jpg"
+            className="relative rounded-full shadow-xl w-[400px] -left-20 "
+          ></img>
+        </div>
       </div>
     </>
   );

@@ -79,7 +79,8 @@ function ProficiencyBubbles() {
           onMouseLeave={handleOverflowMouseLeave}
         >
           <h1 className="text-h1  h-full w-10 text-center ">+</h1>{" "}
-          {currentPage !== "/Resume" && (
+          {/* converts the overlow into a button to nav to resume */}
+          {/* {currentPage !== "/Resume" && (
             <Link
               to="/Resume"
               onClick={handleOverflowMouseLeave}
@@ -87,10 +88,10 @@ function ProficiencyBubbles() {
             >
               View My Resume
             </Link>
-          )}
+          )} */}
         </div>
         {/* hidden card */}
-        {/* <div
+        <div
           style={{ zIndex: 999 }}
           className={`absolute  -ml-9 bg-neu-0 p-1.5  text-med rounded-md pt-7 w-[128px] top-10 ${
             overflowIsHovered ? "block" : "hidden"
@@ -99,7 +100,7 @@ function ProficiencyBubbles() {
           {proficiencies.map((item, index) =>
             index >= 6 ? <p>{proficiencies[index].name}</p> : ""
           )}
-        </div> */}
+        </div>
       </div>
     </div>
   );
@@ -125,7 +126,8 @@ function Navbar() {
       <div className="flex">
         <NavBtn label="ABOUT ME" to="/" />
         <NavBtn label="PORTFOLIO" to="/Portfolio" />
-        <NavBtn label="CONTACT" to="/" />
+        <NavBtn label="RESUME" to="/RESUME" />
+        <NavBtn label="CONTACT" to="/Contact-Me" />
       </div>
       <div className="w-full h-full py-4 px-8 flex justify-end">
         {/* <Button label="Resume" style="ml-auto bg-pri-1" /> */}
