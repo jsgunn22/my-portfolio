@@ -19,13 +19,23 @@ export default function AboutMe() {
               <h3 className="text-h3 font-bold">Web Development</h3>
             </div>
             <p className="text-lg text-neu-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I started my career in the tech industry in 2018 when I took on
+              the role of a UI design intern at a small start up company where I
+              became immersed in the technology and process of building
+              software. Over time I had begin to learn more about and
+              participate in other roles in the development process like QA,
+              Product Ownership, and Project Management.
+              <br></br>
+              <br></br>
+              As my role progressed into a UI production team lead I learned to
+              manage large projects, striving to meet or beat deadlines.
+              <br></br>
+              <br></br>
+              In 2023 I enrolled in a full stack coding bootcamp course to learn
+              more about the engineering side of software developement. I excell
+              in problem solving. Having several years of experience in UI
+              Design and dynamic feature flows enhance my understanding of
+              requirements and what it takes to fulfill AC.
             </p>
           </div>
           {/* button group */}

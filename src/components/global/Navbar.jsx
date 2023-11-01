@@ -104,7 +104,7 @@ function ProficiencyBubbles() {
           }`}
         >
           {proficiencies.map((item, index) =>
-            index >= 6 ? <p>{proficiencies[index].name}</p> : ""
+            index >= 6 ? <p key={index}>{proficiencies[index].name}</p> : ""
           )}
         </div>
       </div>
