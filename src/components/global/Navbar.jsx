@@ -1,6 +1,6 @@
 // import Button from "../atoms/button";
 import { Link, useLocation } from "react-router-dom";
-import proficiencies from "../../../proficiencyData";
+import proficiencies from "../../proficiencyData";
 import React, { useState } from "react";
 import Button from "../atoms/Button";
 

@@ -1,5 +1,5 @@
 import SectionHeader from "../components/global/SectionHeader";
-import projects from "../../projectData";
+import projects from "../projectData";
 
 function ProfBubble({ img, key }) {
   console.log(img);

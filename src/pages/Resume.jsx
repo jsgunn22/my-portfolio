@@ -1,4 +1,4 @@
-import proficiencies from "../../proficiencyData";
+import proficiencies from "../proficiencyData";
 import SectionHeader from "../components/global/SectionHeader";
 
 function ProfCard(props) {
