@@ -4,6 +4,13 @@ import proficiencies from "../../../proficiencyData";
 import React, { useState } from "react";
 import Button from "../atoms/button";
 
+const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = "assets/resume.pdf";
+  link.download = "resume.pdf";
+  link.click();
+};
+
 function ProfBubble(props) {
   const zI = 60 - props.index * 10;
 
@@ -124,7 +131,11 @@ function Navbar() {
   return (
     <nav className={`h-[72px] flex absolute z-10 w-screen `}>
       <div className="w-full h-full py-4 px-8 flex ">
-        <Button icon="fa-solid fa-download" label="Download Jeffrey's Resume" />
+        <Button
+          icon="fa-solid fa-download"
+          label="Download Jeffrey's Resume"
+          action={downloadResume}
+        />
       </div>
       <div className="flex">
         <NavBtn label="ABOUT ME" to="/" />
