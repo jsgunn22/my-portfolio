@@ -54,7 +54,7 @@ export default function AboutMe() {
           <div className="right-[720px] bottom-32 absolute w-[56px] h-[56px] shadow-sm  rounded-full bg-opac-pri"></div>
           <div className="-right-20 -bottom-20 absolute w-[656px] h-[656px] inset shadow-sm  rounded-full bg-opac-pri "></div>
           <img
-            src="src/assets/images/profile-alt.png"
+            src="assets/images/profile-alt.png"
             className="right-[304px] bottom-60 absolute rounded-full shadow-xl w-[400px] "
           ></img>
         </div>
