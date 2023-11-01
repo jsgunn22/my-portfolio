@@ -1,5 +1,3 @@
-import Button from "../components/atoms/button";
-
 export default function AboutMe() {
   return (
     <>
