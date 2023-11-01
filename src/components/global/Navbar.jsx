@@ -41,8 +41,6 @@ function ProfBubble(props) {
 }
 
 function ProficiencyBubbles() {
-  const currentPage = useLocation().pathname;
-
   // builds an array if first 6 proficiency logos
   const profLogos = [];
   for (let i = 0; i < 6; i++) {
