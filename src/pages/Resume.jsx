@@ -4,7 +4,7 @@ import SectionHeader from "../components/global/SectionHeader";
 function ProfCard(props) {
   return (
     <div className="w-full min-w-[200px] bg-neu-9 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300 pb-2">
-      <img src={props.img}></img>
+      <img src={props.img} className="w-full"></img>
       <div className="w-full px-6 my-2">
         <h2 className="text-h2 font-black text-neu-0 mb-2 text-left">
           {props.name}

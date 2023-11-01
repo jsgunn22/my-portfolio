@@ -113,11 +113,16 @@ function ProficiencyBubbles() {
 }
 
 function NavBtn(props) {
+  const currentPage = useLocation().pathname;
   return (
-    <div className="px-8 pt-[26px] transition duration-200 hover:scale-110">
+    <div className="px-8 pt-[26px] transition duration-200  hover:scale-105">
       <Link
         to={props.to}
-        className="text-lg text-neu-0 pt-[26px] whitespace-nowrap	transition duration-200 hover:scale-110 cursor-pointer"
+        className={`text-lg text-neu-0 pt-[26px] whitespace-nowrap 	transition duration-200  cursor-pointer ${
+          currentPage === props.to
+            ? "text-war-5 "
+            : "text-neu-0 hover:text-pri-1 active:text-pri-5"
+        }`}
       >
         {props.label}
       </Link>

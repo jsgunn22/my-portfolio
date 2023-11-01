@@ -21,7 +21,7 @@ function SocialBubble(props) {
       <a href={props.social} target="_blank">
         <i
           className={`${props.icon} ${
-            isHovered && "text-war-5"
+            isHovered && "text-pri-3"
           } text-neu-0 text-h3  mt-3 w-full text-center `}
         ></i>
       </a>
