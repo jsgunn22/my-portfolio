@@ -130,26 +130,73 @@ function NavBtn(props) {
   );
 }
 
-function Navbar() {
-  const currentPage = useLocation().pathname;
-  console.log(currentPage);
+function NavBtnMobile(props) {
   return (
-    <nav className={`h-[72px] flex absolute z-10 w-screen `}>
-      <div className="w-full h-full py-4 px-8 flex ">
-        <Button
-          icon="fa-solid fa-download"
-          label="Download Jeffrey's Resume"
-          action={downloadResume}
-        />
-      </div>
-      <div className="flex">
-        <NavBtn label="ABOUT ME" to="/" />
-        <NavBtn label="PORTFOLIO" to="/Portfolio" />
-        <NavBtn label="RESUME" to="/RESUME" />
-        <NavBtn label="CONTACT" to="/Contact-Me" />
-      </div>
-      <ProficiencyBubbles />
-    </nav>
+    <>
+      <Link
+        to={props.to}
+        className="text-h4 text-neu-9 font-bold hover:text-war-5"
+      >
+        {props.label}
+      </Link>
+    </>
+  );
+}
+
+function Navbar() {
+  let screenWidth = window.innerWidth;
+
+  const [mobileDropdown, setMobileDropdown] = useState(false);
+
+  const handleMobileDropdown = () => {
+    setMobileDropdown(!mobileDropdown);
+  };
+
+  return (
+    <>
+      {screenWidth >= "640" ? (
+        <nav className={`h-[72px] flex absolute z-10 w-screen `}>
+          <div className="w-full h-full py-4 px-8 flex ">
+            <Button
+              icon="fa-solid fa-download"
+              label="Download Jeffrey's Resume"
+              action={downloadResume}
+            />
+          </div>
+          <div className="flex">
+            <NavBtn label="ABOUT ME" to="/" />
+            <NavBtn label="PORTFOLIO" to="/Portfolio" />
+            <NavBtn label="RESUME" to="/Resume" />
+            <NavBtn label="CONTACT" to="/Contact-Me" />
+          </div>
+          <ProficiencyBubbles />
+        </nav>
+      ) : (
+        <nav className="h-15 flex bg-pri-9 z-10 w-screen sticky top-0">
+          <div className="p-2">
+            <Button
+              icon="fa-solid fa-download"
+              label="Jeffrey's Resume"
+              action={downloadResume}
+            />
+          </div>
+          <div
+            className="ml-auto h-15 w-15 py-4 px-5 items-center"
+            onClick={handleMobileDropdown}
+          >
+            <i className="fa-solid fa-bars text-neu-0 h-6  active:text-war-5 text-h3"></i>
+          </div>
+          {mobileDropdown && (
+            <div className="bg-neu-0 absolute right-2 top-12 rounded-md shadow-md flex flex-col py-4 px-6 gap-5">
+              <NavBtnMobile label="ABOUT ME" to="/" />
+              <NavBtnMobile label="PORTFOLIO" to="/Portfolio" />
+              <NavBtnMobile label="RESUME" to="/RESUME" />
+              <NavBtnMobile label="CONTACT" to="/Contact-Me" />
+            </div>
+          )}
+        </nav>
+      )}
+    </>
   );
 }
 
