@@ -3,7 +3,7 @@ import proficiencies from "./proficiencyData";
 const projects = [
   {
     name: "Toff-leo",
-    img: "../../../assets/images/project-thumbnails/toff-leo.png",
+    img: "src/assets/images/project-thumbnails/toff-leo.png",
     github: "https://github.com/jsgunn22/toff-leo",
     link: "https://toff-leo-6bd4612bd777.herokuapp.com/",
     description:
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     name: "Vidya",
-    img: "../../../assets/images/project-thumbnails/vidya.png",
+    img: "src/assets/images/project-thumbnails/vidya.png",
     github: "https://github.com/jsgunn22/vidya-game-search-engine",
     link: "https://luis00809.github.io/Group-3-project/",
     description:
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     name: "Just Another Text Editor",
-    img: "assets/images/project-thumbnails/jate.png",
+    img: "src/assets/images/project-thumbnails/jate.png",
     github: "https://github.com/jsgunn22/text-editor",
     link: "https://jot-it-a62ee6b5eac9.herokuapp.com/",
     description:
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     name: "Day Planner",
-    img: "assets/images/project-thumbnails/planner.png",
+    img: "src/assets/images/project-thumbnails/planner.png",
     github: "https://github.com/jsgunn22/day-planner",
     link: "https://jsgunn22.github.io/day-planner/",
     description:
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     name: "Weather App",
-    img: "assets/images/project-thumbnails/weather.png",
+    img: "src/assets/images/project-thumbnails/weather.png",
     github: "https://github.com/jsgunn22/weather-app",
     link: "https://jsgunn22.github.io/weather-app/",
     description:
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     name: "Notes App",
-    img: "assets/images/project-thumbnails/notes.png",
+    img: "src/assets/images/project-thumbnails/notes.png",
     github: "https://github.com/jsgunn22/noter-taker",
     link: "https://stick-e-notes-bcaf36872306.herokuapp.com/notes",
     description:
