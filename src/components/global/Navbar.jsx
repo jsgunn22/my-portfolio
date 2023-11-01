@@ -2,7 +2,7 @@
 import { Link, useLocation } from "react-router-dom";
 import proficiencies from "../../../proficiencyData";
 import React, { useState } from "react";
-import Button from "../atoms/button";
+import Button from "../atoms/Button";
 
 const downloadResume = () => {
   const link = document.createElement("a");
