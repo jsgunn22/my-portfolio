@@ -11,7 +11,7 @@ export default function ContactMe() {
           Interested in learning more? Send me an email and let’s connect!
         </p>
       </div>
-      <div className="w-10/12 sm:w-8/12 md:w-7/12 lg:w-6/12  xl:w-5/12  bg-neu-0  mx-auto shadow-lg rounded-lg mt-6 p-10 flex flex-col gap-6">
+      <div className="w-10/12 sm:w-8/12 md:w-7/12 lg:w-6/12  xl:w-5/12  bg-neu-0  mx-auto shadow-lg rounded-lg mt-6 p-10 flex flex-col gap-10">
         <Input label="Your Name" type="text" />
         <Input label="Your Email" type="email" />
         <TextArea label="message" />

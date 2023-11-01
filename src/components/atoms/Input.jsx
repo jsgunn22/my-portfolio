@@ -42,10 +42,17 @@ export default function Input({ label, type }) {
         onFocus={handleFocus}
         onBlur={handleBlur}
       ></input>
-      {showError && (
-        <div>
-          <i className="fa-solid fa-car"></i>
+      {showError || emptyError ? (
+        <div className="flex text-dan-5 relative top-1 gap-1 h-0">
+          <i className="fa-solid fa-circle-exclamation text-sm"></i>
+          <p className="text-sm">{`${
+            emptyError
+              ? "This field can not be empty"
+              : "The format does not match an email"
+          }`}</p>
         </div>
+      ) : (
+        ""
       )}
     </div>
   );
