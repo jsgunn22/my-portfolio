@@ -28,7 +28,7 @@ function ProjectCard({ name, img, repo, link, prof, description }) {
   return (
     <>
       <div
-        className={`w-full min-w-[200px] bg-neu-9 rounded-lg  shadow-lg hover:scale-105 transition duration-300 pb-2 relative `}
+        className={`w-full min-w-[200px] bg-neu-9 rounded-lg  shadow-lg hover:scale-105 transition duration-300 pb-2 relative  `}
       >
         <div className="rounded-t-lg overflow-clip">
           <img src={img} className="w-full object-cover	 h-56"></img>
@@ -72,26 +72,31 @@ export default function Portfolio() {
   return (
     <>
       <div
-        className="px-20 pb-28 pt-6 overflow-y-auto scroll-auto  "
+        className="pt-[72px] w-screen"
         style={{ height: "calc(100vh - 72px)" }}
       >
-        <SectionHeader
-          icon="fa-solid fa-briefcase"
-          heading="Portfolio"
-          description="Below is a collection of my favorite project I have created or contributed to."
-        />
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 flex-wrap gap-10 max-w-7xl mx-auto">
-          {projects.map((item, index) => (
-            <ProjectCard
-              key={index}
-              name={item.name}
-              img={item.img}
-              repo={item.github}
-              link={item.link}
-              prof={item.proficiencies}
-              description={item.description}
-            />
-          ))}
+        <div
+          className="px-20 pb-28 pt-6 overflow-y-auto scroll-auto "
+          style={{ height: "calc(100vh - 72px)" }}
+        >
+          <SectionHeader
+            icon="fa-solid fa-briefcase"
+            heading="Portfolio"
+            description="Below is a collection of my favorite project I have created or contributed to."
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 flex-wrap gap-10 max-w-7xl mx-auto">
+            {projects.map((item, index) => (
+              <ProjectCard
+                key={index}
+                name={item.name}
+                img={item.img}
+                repo={item.github}
+                link={item.link}
+                prof={item.proficiencies}
+                description={item.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>

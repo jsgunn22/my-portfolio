@@ -31,6 +31,7 @@ export default {
         1: "#e0eff5",
         3: "#8FDFFF",
         5: "#2e94b9",
+        7: "#226B86",
         9: "#1c596f",
       },
       sec: {

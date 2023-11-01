@@ -6,7 +6,7 @@ import Resume from "./pages/Resume";
 
 function App() {
   return (
-    <div className="bg-gradient min-h-screen">
+    <div className="bg-gradient min-h-screen ">
       <Navbar />
       {/* <AboutMe /> */}
       {/* <Resume /> */}

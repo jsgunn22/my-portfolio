@@ -4,12 +4,12 @@ export default function AboutMe() {
   return (
     <>
       <div
-        className="px-20 flex items-center overflow-x-clip "
-        style={{ height: "calc(100vh - 72px - 112px)" }}
+        className=" flex items-center overflow-x-clip"
+        style={{ height: "calc(100vh - 72px - 12px)", paddingTop: "72px" }}
       >
         {/* text area */}
-        <div className="w-full">
-          <div className="max-w-lg mb-6">
+        <div className="w-full ml-20">
+          <div className="sm:w-sm md:w-md lg:w-lg w-5/12 mb-6">
             <h1 className="mb-1 text-[64px] font-black text-neu-0 leading-[75px] ">
               Jeffrey Gunn
             </h1>
@@ -37,17 +37,17 @@ export default function AboutMe() {
             />
           </div> */}
         </div>
-
-        <div className="relative min-w-[200px] h-[200px] shadow-sm -right-40 -top-24 rounded-full bg-opac-pri">
-          <div className="absolute min-w-[100px] min-h-[100px] shadow-sm right-80 top-40 rounded-full bg-opac-pri">
-            <div className="absolute min-w-[56px] min-h-[56px] shadow-sm -right-28 top-32 rounded-full bg-opac-pri"></div>
-          </div>
-        </div>
-
-        <div className="min-w-[656px] min-h-[656px] inset shadow-sm  rounded-full bg-opac-pri relative -bottom-[68px] -right-[174px]">
+        <div
+          className={`absolute  min-h-[768px] w-screen overflow-clip flex items-center z-0 `}
+          style={{ maxHeight: "calc(100vh - 72px - 112px)", zIndex: "0" }}
+        >
+          <div className=" right-[624px] bottom-[424px] absolute  w-[200px] h-[200px] shadow-sm  rounded-full bg-opac-pri"></div>
+          <div className="right-[800px] absolute w-[100px] h-[100px] shadow-sm  rounded-full bg-opac-pri"></div>
+          <div className="right-[720px] bottom-32 absolute w-[56px] h-[56px] shadow-sm  rounded-full bg-opac-pri"></div>
+          <div className="-right-20 -bottom-20 absolute w-[656px] h-[656px] inset shadow-sm  rounded-full bg-opac-pri "></div>
           <img
-            src="assets/images/profile.jpg"
-            className="relative rounded-full shadow-xl w-[400px] -left-20 "
+            src="assets/images/profile-alt.png"
+            className="right-[304px] bottom-60 absolute rounded-full shadow-xl w-[400px] "
           ></img>
         </div>
       </div>

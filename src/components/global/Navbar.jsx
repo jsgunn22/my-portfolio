@@ -2,6 +2,7 @@
 import { Link, useLocation } from "react-router-dom";
 import proficiencies from "../../../proficiencyData";
 import React, { useState } from "react";
+import Button from "../atoms/button";
 
 function ProfBubble(props) {
   const zI = 60 - props.index * 10;
@@ -31,7 +32,7 @@ function ProfBubble(props) {
         style={{ zIndex: 999 }}
         className={`${
           ishovered ? "block h-30" : "hidden h-0"
-        } absolute  -ml-6 bg-neu-0 p-1.5 transition duration-200  rounded-md pt-7 max-w-[200px] top-10 `}
+        } relative -top-4  right-40 bg-neu-0 p-1.5 transition duration-200  rounded-md pt-7 w-[200px] `}
       >
         <h4 className="text-h4 font-bold text-neu-9 mb-1">{props.name}</h4>
         <p className="text-sm">{props.summary}</p>
@@ -58,7 +59,7 @@ function ProficiencyBubbles() {
   };
 
   return (
-    <div className="h-full w-full flex py-4 pl-12 px-6 ">
+    <div className="h-full w-full flex py-4 pl-12 px-6 justify-end">
       {profLogos.map((logo, index) => (
         <ProfBubble
           key={index}
@@ -91,7 +92,7 @@ function ProficiencyBubbles() {
         {/* hidden card */}
         <div
           style={{ zIndex: 999 }}
-          className={`absolute  -ml-9 bg-neu-0 p-1.5  text-med rounded-md pt-7 w-[128px] top-10 ${
+          className={`absolute top-10  right-4  bg-neu-0 p-1.5  text-med rounded-md pt-7 w-[128px]  ${
             overflowIsHovered ? "block" : "hidden"
           }`}
         >
@@ -118,18 +119,20 @@ function NavBtn(props) {
 }
 
 function Navbar() {
+  const currentPage = useLocation().pathname;
+  console.log(currentPage);
   return (
-    <nav className="h-[72px] flex">
-      <ProficiencyBubbles />
+    <nav className={`h-[72px] flex absolute z-10 w-screen `}>
+      <div className="w-full h-full py-4 px-8 flex ">
+        <Button icon="fa-solid fa-download" label="Download Jeffrey's Resume" />
+      </div>
       <div className="flex">
         <NavBtn label="ABOUT ME" to="/" />
         <NavBtn label="PORTFOLIO" to="/Portfolio" />
         <NavBtn label="RESUME" to="/RESUME" />
         <NavBtn label="CONTACT" to="/Contact-Me" />
       </div>
-      <div className="w-full h-full py-4 px-8 flex justify-end">
-        {/* <Button label="Resume" style="ml-auto bg-pri-1" /> */}
-      </div>
+      <ProficiencyBubbles />
     </nav>
   );
 }

@@ -48,27 +48,32 @@ export default function Resume() {
   return (
     <>
       <div
-        className="overflow-y-auto scroll-auto text-center pb-28"
+        className="pt-[72px] w-screen"
         style={{ height: "calc(100vh - 72px)" }}
       >
-        <SkillSetSection
-          skill="uiDesign"
-          icon="fa-solid fa-lightbulb"
-          title="UI Design"
-          skillDescription="I started my UI Design career in 2018 at a start up company.  Working with a strong team I refined my design skills and became more than proficient in certail work stations like Figma and Sketch."
-        />
-        <SkillSetSection
-          skill="frontEnd"
-          icon="fa-solid fa-desktop"
-          title="Front End Development"
-          skillDescription="Lorem Ipsum"
-        />
-        <SkillSetSection
-          skill="backEnd"
-          icon="fa-solid fa-database"
-          title="Front End Development"
-          skillDescription="Lorem Ipsum"
-        />
+        <div
+          className="overflow-y-auto pt-6 scroll-auto h-screen text-center pb-28"
+          style={{ height: "calc(100vh - 72px)" }}
+        >
+          <SkillSetSection
+            skill="uiDesign"
+            icon="fa-solid fa-lightbulb"
+            title="UI Design"
+            skillDescription="I started my UI Design career in 2018 at a start up company.  Working with a strong team I refined my design skills and became more than proficient in certail work stations like Figma and Sketch."
+          />
+          <SkillSetSection
+            skill="frontEnd"
+            icon="fa-solid fa-desktop"
+            title="Front End Development"
+            skillDescription="Lorem Ipsum"
+          />
+          <SkillSetSection
+            skill="backEnd"
+            icon="fa-solid fa-database"
+            title="Front End Development"
+            skillDescription="Lorem Ipsum"
+          />
+        </div>
       </div>
     </>
   );
