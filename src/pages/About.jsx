@@ -5,7 +5,7 @@ export default function AboutMe() {
     <>
       <div
         className="px-20 flex items-center overflow-x-clip "
-        style={{ height: "calc(100vh - 72px - 112px)"}}
+        style={{ height: "calc(100vh - 72px - 112px)" }}
       >
         {/* text area */}
         <div className="w-full">
@@ -28,13 +28,14 @@ export default function AboutMe() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div className="flex gap-4">
+          {/* button group */}
+          {/* <div className="flex gap-4">
             <Button label="My Work" />
             <Button
               label="Email Me"
               style="bg-inherit bg-pri-9 border-pri-1 border-2 text-pri-1 hover:bg-pri-5"
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="relative min-w-[200px] h-[200px] shadow-sm -right-40 -top-24 rounded-full bg-opac-pri">

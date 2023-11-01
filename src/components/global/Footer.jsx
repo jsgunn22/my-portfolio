@@ -36,9 +36,9 @@ export default function Footer() {
       className="p-4 flex gap-4  absolute w-full bottom-0"
       style={{
         background:
-          currentPage !== "/"
-            ? "linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%)"
-            : "",
+          currentPage === "/" || currentPage === "/Contact-Me"
+            ? ""
+            : "linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%)",
       }}
     >
       <p className="text-lg mt-[14px] text-neu-0">Follow Me</p>
