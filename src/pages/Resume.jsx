@@ -21,7 +21,7 @@ function SkillSetSection(props) {
   const data = proficiencies.filter((item) => item.skill === props.skill);
   return (
     <>
-      <div className="px-20 py-6 max-w-7xl mx-auto">
+      <div className="lg:px-20 px-8 py-6 max-w-7xl mx-auto">
         <div>
           <SectionHeader
             icon={props.icon}
@@ -48,11 +48,11 @@ export default function Resume() {
   return (
     <>
       <div
-        className="pt-[72px] w-screen"
+        className="lg:pt-[72px] pt-16 w-screen"
         style={{ height: "calc(100vh - 72px)" }}
       >
         <div
-          className="overflow-y-auto pt-6 scroll-auto h-screen text-center pb-28"
+          className="overflow-y-auto  scroll-auto h-screen text-center pb-28"
           style={{ height: "calc(100vh - 72px)" }}
         >
           <SkillSetSection

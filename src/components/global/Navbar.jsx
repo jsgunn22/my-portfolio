@@ -154,12 +154,20 @@ function Navbar() {
 
   return (
     <>
-      {screenWidth >= "640" ? (
-        <nav className={`h-[72px] flex absolute z-10 w-screen `}>
+      {screenWidth >= "768" ? (
+        <nav
+          className={`h-[72px] flex absolute z-10 w-screen ${
+            screenWidth >= "1024" ? "" : "bg-pri-9"
+          }`}
+        >
           <div className="w-full h-full py-4 px-8 flex ">
             <Button
-              icon="fa-solid fa-download"
-              label="Download Jeffrey's Resume"
+              icon={`${screenWidth >= "1024" && "fa-solid fa-download"}`}
+              label={`${
+                screenWidth >= "1024"
+                  ? "Download Jeffrey's Resume"
+                  : "Jeffrey's Resume"
+              }   `}
               action={downloadResume}
             />
           </div>
@@ -169,7 +177,7 @@ function Navbar() {
             <NavBtn label="RESUME" to="/Resume" />
             <NavBtn label="CONTACT" to="/Contact-Me" />
           </div>
-          <ProficiencyBubbles />
+          {screenWidth >= "1280" && <ProficiencyBubbles />}
         </nav>
       ) : (
         <nav className="h-15 flex bg-pri-9 z-10 w-screen sticky top-0">

@@ -72,11 +72,11 @@ export default function Portfolio() {
   return (
     <>
       <div
-        className="pt-[72px] w-screen"
+        className="lg:pt-[72px] pt-16 w-screen"
         style={{ height: "calc(100vh - 72px)" }}
       >
         <div
-          className="px-20 pb-28 pt-6 overflow-y-auto scroll-auto "
+          className=" lg:px-20 px-8 pb-28 pt-6 overflow-y-auto scroll-auto "
           style={{ height: "calc(100vh - 72px)" }}
         >
           <SectionHeader

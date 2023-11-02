@@ -31,31 +31,61 @@ function SocialBubble(props) {
 
 export default function Footer() {
   const currentPage = useLocation().pathname;
+  let screenWidth = window.innerWidth;
   return (
-    <footer
-      className="p-4 flex gap-4  absolute w-full bottom-0"
-      style={{
-        background:
-          currentPage === "/" || currentPage === "/Contact-Me"
-            ? ""
-            : "linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%)",
-      }}
-    >
-      <p className="text-lg mt-[14px] text-neu-0">Follow Me</p>
-      <div className="flex gap-12">
-        <SocialBubble
-          icon="fa-brands fa-github"
-          social="https://github.com/jsgunn22"
-        />
-        <SocialBubble
-          icon="fa-brands fa-linkedin"
-          social="https://www.linkedin.com/in/jeffrey-gunn-054451156/"
-        />
-        <SocialBubble
-          icon="fa-brands fa-instagram"
-          social="https://www.instagram.com/fate_worse_than_jeff/"
-        />
-      </div>
-    </footer>
+    <>
+      {" "}
+      {screenWidth >= "1024" ? (
+        <footer
+          className="p-4 flex gap-4  absolute w-full bottom-0"
+          style={{
+            background:
+              currentPage === "/" || currentPage === "/Contact-Me"
+                ? ""
+                : "linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%)",
+          }}
+        >
+          <p className="text-lg mt-[14px] text-neu-0">Follow Me</p>
+          <div className="flex gap-12">
+            <SocialBubble
+              icon="fa-brands fa-github"
+              social="https://github.com/jsgunn22"
+            />
+            <SocialBubble
+              icon="fa-brands fa-linkedin"
+              social="https://www.linkedin.com/in/jeffrey-gunn-054451156/"
+            />
+            <SocialBubble
+              icon="fa-brands fa-instagram"
+              social="https://www.instagram.com/fate_worse_than_jeff/"
+            />
+          </div>
+        </footer>
+      ) : (
+        <footer
+          className="p-4 flex gap-4  absolute w-full bottom-0"
+          style={{
+            background:
+              "linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%)",
+          }}
+        >
+          <p className="text-lg mt-[14px] text-neu-0">Follow Me</p>
+          <div className="flex gap-12">
+            <SocialBubble
+              icon="fa-brands fa-github"
+              social="https://github.com/jsgunn22"
+            />
+            <SocialBubble
+              icon="fa-brands fa-linkedin"
+              social="https://www.linkedin.com/in/jeffrey-gunn-054451156/"
+            />
+            <SocialBubble
+              icon="fa-brands fa-instagram"
+              social="https://www.instagram.com/fate_worse_than_jeff/"
+            />
+          </div>
+        </footer>
+      )}
+    </>
   );
 }

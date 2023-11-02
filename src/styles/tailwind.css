@@ -578,6 +578,10 @@ video {
   bottom: 424px;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .right-4 {
   right: 1rem;
 }
@@ -602,6 +606,10 @@ video {
   right: 800px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-1 {
   top: 0.25rem;
 }
@@ -610,20 +618,12 @@ video {
   top: 2.5rem;
 }
 
-.top-32 {
-  top: 8rem;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
 .top-12 {
   top: 3rem;
 }
 
-.top-0 {
-  top: 0px;
+.top-32 {
+  top: 8rem;
 }
 
 .z-0 {
@@ -698,6 +698,10 @@ video {
   margin-left: 1rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -728,22 +732,6 @@ video {
 
 .mt-\[14px\] {
   margin-top: 14px;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
 }
 
 .block {
@@ -782,6 +770,10 @@ video {
   height: 14rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-\[100px\] {
   height: 100px;
 }
@@ -808,14 +800,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .min-h-\[768px\] {
@@ -883,8 +867,12 @@ video {
   width: 100vw;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .min-w-\[200px\] {
@@ -967,6 +955,10 @@ video {
 
 .overflow-clip {
   overflow: clip;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .overflow-y-auto {
@@ -1097,6 +1089,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1122,9 +1119,9 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-2 {
@@ -1153,6 +1150,42 @@ video {
 
 .pt-\[72px\] {
   padding-top: 72px;
+}
+
+.pb-\[56px\] {
+  padding-bottom: 56px;
+}
+
+.pb-\[64px\] {
+  padding-bottom: 64px;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pb-\[80px\] {
+  padding-bottom: 80px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-left {
@@ -1387,8 +1420,16 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:right-\[40px\] {
+    right: 40px;
+  }
+
   .sm\:w-8\/12 {
     width: 66.666667%;
+  }
+
+  .sm\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .sm\:grid-cols-1 {
@@ -1398,21 +1439,76 @@ video {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sm\:text-h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 @media (min-width: 768px) {
+  .md\:right-\[100px\] {
+    right: 100px;
+  }
+
   .md\:w-7\/12 {
     width: 58.333333%;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:pb-\[64px\] {
+    padding-bottom: 64px;
+  }
+
+  .md\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:right-\[200px\] {
+    right: 200px;
+  }
+
+  .lg\:right-\[100px\] {
+    right: 100px;
+  }
+
+  .lg\:right-\[50px\] {
+    right: 50px;
+  }
+
   .lg\:w-6\/12 {
     width: 50%;
+  }
+
+  .lg\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .lg\:grid-cols-2 {
@@ -1422,9 +1518,30 @@ video {
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:pt-\[72px\] {
+    padding-top: 72px;
+  }
+
+  .lg\:pb-\[64px\] {
+    padding-bottom: 64px;
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:right-\[304px\] {
+    right: 304px;
+  }
+
+  .xl\:right-\[200px\] {
+    right: 200px;
+  }
+
   .xl\:w-5\/12 {
     width: 41.666667%;
   }
@@ -1435,6 +1552,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:right-\[304px\] {
+    right: 304px;
+  }
+
   .\32xl\:w-5\/12 {
     width: 41.666667%;
   }
