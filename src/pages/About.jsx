@@ -63,9 +63,9 @@ export default function AboutMe() {
         </div>
       ) : (
         <div
-          className="text-center overflow-scroll  pt-10 md:pt-24 pb-[64px]"
+          className="text-center overflow-scroll  pt-10 md:pt-24 pb-[72px]"
           style={{
-            height: `calc(100vh   ${screenWidth <= "768" ? "- 56px" : ""})`,
+            height: `calc(100vh ${screenWidth <= "768" ? "- 56px" : ""})`,
           }}
         >
           <img

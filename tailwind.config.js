@@ -76,6 +76,9 @@ export default {
       overflow: {
         footer: "2px 2px 4px -2px rgba(1, 1, 1, 1)",
       },
+      scrollBar: {
+        width: "0px",
+      },
     },
   },
   plugins: [],
