@@ -198,7 +198,7 @@ function Navbar() {
             <div className="bg-neu-0 absolute right-2 top-12 rounded-md shadow-md flex flex-col py-4 px-6 gap-5">
               <NavBtnMobile label="ABOUT ME" to="/" />
               <NavBtnMobile label="PORTFOLIO" to="/Portfolio" />
-              <NavBtnMobile label="RESUME" to="/RESUME" />
+              <NavBtnMobile label="RESUME" to="/Resume" />
               <NavBtnMobile label="CONTACT" to="/Contact-Me" />
             </div>
           )}
