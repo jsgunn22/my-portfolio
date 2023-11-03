@@ -73,7 +73,7 @@ export default function Resume() {
           <SkillSetSection
             skill="backEnd"
             icon="fa-solid fa-database"
-            title="Front End Development"
+            title="Back End Development"
             skillDescription="Lorem Ipsum"
           />
         </div>
